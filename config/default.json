@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://johnpaul15:johnpaul15@reacttuts-cluster.kfr4q.mongodb.net/conkeeperDB?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://johnpaul15:johnpaul15@reacttuts-cluster.kfr4q.mongodb.net/conkeeperDB?retryWrites=true&w=majority",
+  "jwtSecret": "secretwalangclue"
 }
