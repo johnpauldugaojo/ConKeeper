@@ -11,7 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },
   "keywords": [],
-  "author": "",
+  "author": "John Paul Dugaojo",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
