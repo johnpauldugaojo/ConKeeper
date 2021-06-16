@@ -5,7 +5,7 @@ import ContactFilter from '../contacts/ContactFilter';
 import AuthContext from '../../context/authcontext/AuthContext';
 
 const Home = () => {
-  const authContext = useContext(AuthContext);
+  const authContext = useContext(AuthContext); //initialize
 
   useEffect(() => {
     authContext.loadUser();
