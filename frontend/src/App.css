@@ -90,6 +90,9 @@ img {
   text-align: left;
 }
 
+.text-success {
+  color: var(--success-color);
+}
 /* Cards */
 .card {
   padding: 1rem;
