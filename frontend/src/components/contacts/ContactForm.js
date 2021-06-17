@@ -1,11 +1,14 @@
 import React, { useContext, useState, useEffect } from 'react';
 import ContactContext from '../../context/contact/ContactContext';
+import AlertContext from '../../context/alertcontext/AlertContext';
 
 const ContactForm = () => {
   // initialize the contactcontext
   const contactContext = useContext(ContactContext);
+  const alertcontext = useContext(AlertContext);
   // Destructuring
   const { addContact, current, clearCurrent, updateContact } = contactContext;
+  const { setAlert } = alertcontext;
 
   useEffect(() => {
     if (current !== null) {
@@ -37,8 +40,11 @@ const ContactForm = () => {
 
     if (current === null) {
       addContact(contact);
+      setAlert('Contact Successfully Added!', 'success');
     } else {
       updateContact(contact);
+      setAlert('Update Successfully', 'success');
+      clearCurrent();
     }
 
     setContact({
